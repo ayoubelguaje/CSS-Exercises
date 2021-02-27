@@ -1,0 +1,43 @@
+.parent{
+    overflow: hidden;
+}
+.parent .one{
+    width: 50px;
+    background-color: rgb(185, 212, 187);
+    padding: 15px;
+    text-align: center;
+    font-size: 50px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.parent .two{
+    width: 600px;
+    line-height: 1.5;
+    float: left;
+    background-color: rgb(185, 212, 187);
+    position: relative;
+    padding: 10px;
+}
+.parent .two::before{
+    position: absolute;
+    content: '';
+    top: 45%;
+    left: -12px;
+    border-style: solid;
+    border-color: transparent transparent transparent cornflowerblue;
+    width: 0px;
+    border-width: 10px;
+}
+.parent .two::after{
+    content: '';
+    width: 10px;
+    height: 100%;
+    background-color: cornflowerblue;
+    top: 0;
+    right: -15px;
+    position: absolute;
+}
+.clear{
+    clear: both;;
+}
